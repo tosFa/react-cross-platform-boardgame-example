@@ -20,7 +20,7 @@ npm run start -> starts the server
 
 npm run start-web -> starts the hot reloaded web client
 
-npm run start-ios -> starts the ios client
+react-native run-ios -> starts the ios client
 
-npm run start-android -> starts the android client
+react-native run-android -> starts the android client
 
