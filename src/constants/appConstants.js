@@ -1,0 +1,6 @@
+export default {
+  NUMBER_OF_ROWS: 5,
+  NUMBER_OF_COLUMNS: 5,
+  NUMBER_OF_DICES: 1,
+  NUMBER_OF_FIGURINES: 3
+}

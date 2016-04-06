@@ -1,0 +1,89 @@
+// Stiziles
+html, body {
+  background: white;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  background-color: blue;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row;
+  flex: 1
+}
+
+.field {
+  display: flex;
+  flex: 1;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  font-size: 30px;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin: auto;
+}
+
+.footer-last-throw {
+  text-align: center;
+}
+
+.player {
+  display: flex;
+  background: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.you {
+  background: purple;
+}
+
+footer {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+}
