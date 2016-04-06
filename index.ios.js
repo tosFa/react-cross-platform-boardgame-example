@@ -14,11 +14,10 @@ import App from './src/components/App/App';
 import configureStore from './src/config/configureStore';
 import {Provider} from 'react-redux';
 
-
 const store = configureStore('ios');
 store.dispatch({type: 'SET_PLATFORM', platform: 'server'});
 
-class boardgame3 extends Component {
+class boardgameExample extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -28,4 +27,4 @@ class boardgame3 extends Component {
   }
 }
 
-AppRegistry.registerComponent('boardgame3', () => boardgameExample);
+AppRegistry.registerComponent('boardgameExample', () => boardgameExample);

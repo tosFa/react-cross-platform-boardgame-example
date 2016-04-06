@@ -16,7 +16,7 @@ import {Provider} from 'react-redux';
 
 const store = configureStore('android');
 store.dispatch({type: 'SET_PLATFORM', platform: 'android'});
-class boardgame3 extends Component {
+class boardgameExample extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -26,4 +26,4 @@ class boardgame3 extends Component {
   }
 }
 
-AppRegistry.registerComponent('boardgame3', () => boardgameExample);
+AppRegistry.registerComponent('boardgameExample', () => boardgameExample);
