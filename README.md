@@ -3,7 +3,7 @@ This is an example app that shows off a web, ios and android app with the same c
 
 Installation
 
-Install Node.js 4.0 or newer
+Install Node.js 5 or newer (I use 5.3.0)
 
 npm install -g react-native-cli
 
