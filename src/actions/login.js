@@ -36,7 +36,7 @@ export function login(name) {
     let serverName = 'localhost';
 
     if (getState().device.platform === 'android') {
-      serverName = '10.0.2.2';
+      serverName = '10.0.3.2';
     }
     if (getState().player.isLoggedIn === true) {
       return dispatch(loginRequestSuccess(name))

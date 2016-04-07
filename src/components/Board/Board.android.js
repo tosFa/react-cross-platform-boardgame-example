@@ -24,7 +24,7 @@ class BoardPresentation extends Base {
 
     const { dispatch } = this.props;
 
-    this.socket = io('http://10.0.2.2:8888', {transports: ['websocket']});
+    this.socket = io('http://10.0.3.2:8888', {transports: ['websocket']});
     this.socket.emit('NEW_PLAYER', {player: this.props.player});
     this.socket.on('game', function(data) {
       dispatch({type: 'GAME_STATE', game: data.game});
