@@ -26,11 +26,13 @@ class AppPresentation extends Base {
   }
 
   renderContent() {
-    console.log('rendering app');
+    console.log('rendering app content::ios');
+
     if (this.props.loggedIn === true) {
-      console.log('rendering app loggedin');
+      console.log('user is logged in::ios');
       return (<Board />);
     }
+    console.log('user is not logged in::ios');
     return (<Login />);
   }
 }

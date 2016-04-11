@@ -15,7 +15,14 @@ import configureStore from './src/config/configureStore';
 import {Provider} from 'react-redux';
 
 const store = configureStore('ios');
-store.dispatch({type: 'SET_PLATFORM', platform: 'server'});
+console.log('module : ', module);
+if (module.hot) {
+  module.hot.accept(() => {
+    const nextRootReducer = require('./src/reducers/index').default;
+    store.replaceReducer(nextRootReducer);
+  });
+}
+store.dispatch({type: 'SET_PLATFORM', platform: 'ios'});
 
 class boardgameExample extends Component {
   render() {

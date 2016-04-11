@@ -26,7 +26,7 @@ class AppPresentation extends Base {
   }
 
   renderContent() {
-    console.log(this.props);
+    console.log('rendering app component in android');
     if (this.props.loggedIn === true) {
       return (<Board />);
     }

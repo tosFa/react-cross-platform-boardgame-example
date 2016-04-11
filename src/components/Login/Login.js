@@ -8,7 +8,7 @@ import {
   LOGIN_INPUT_CHANGE
 } from '../../constants/appConstants';
 import {connect} from 'react-redux';
-import {mapDispatchToProps} from './connectToStore';
+import {mapStateToProps, mapDispatchToProps} from './connectToStore';
 
 class LoginPresentation extends Base {
 
@@ -29,12 +29,13 @@ class LoginPresentation extends Base {
           onChange={
             () => this.props.onChange(input.value)
           }
+          value={this.props.input}
         />
         <button
-          style={{background: 'blue'}}
+          className='login-button'
           onClick={ () => this.props.onClick(input.value) }
         >
-         Log in
+         Log in!!
         </button>
       </div>
 
@@ -43,6 +44,6 @@ class LoginPresentation extends Base {
 };
 
 
-const Login = connect(null,mapDispatchToProps)(LoginPresentation);
+const Login = connect(mapStateToProps,mapDispatchToProps)(LoginPresentation);
 
 export default Login;

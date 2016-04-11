@@ -83,7 +83,6 @@ expressServer.get('/', function (req, res) {
 
 
 expressServer.get('/login', function (req, res) {
-  console.log('213123');
   res.send({status: true});
 });
 

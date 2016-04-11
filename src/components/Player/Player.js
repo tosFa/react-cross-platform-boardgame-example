@@ -8,7 +8,6 @@ import {mapStateToProps} from './connectToStore';
 
 class PlayerPresentation extends Base {
   render() {
-    console.log(this.props);
     return (
       <div
         className={'player' + (this.props.you ? ' you' : '')}

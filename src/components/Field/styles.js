@@ -1,15 +1,17 @@
 export default {
-    field: {
-        flex: 1,
-        backgroundColor: 'green',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    fieldText: {
-        textAlign: 'center'
-    },
+  field: {
+    flex: 1,
+    backgroundColor: 'green',
+    justifyContent: 'center',
+    alignItems: 'center'
 
-    text: {
-        fontSize: 40
-    }
+  },
+  fieldText: {
+    textAlign: 'center',
+    fontWeight: 'bold'
+  },
+
+  text: {
+    fontSize: 40
+  }
 }

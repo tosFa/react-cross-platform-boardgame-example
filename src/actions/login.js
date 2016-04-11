@@ -1,4 +1,3 @@
-
 import config from '../config/config.api';
 
 export function loginRequest() {
@@ -33,17 +32,12 @@ export function loginInputChange(name) {
 
 export function login(name) {
   return (dispatch, getState) => {
-    let serverName = 'localhost';
-
-    if (getState().device.platform === 'android') {
-      serverName = '10.0.3.2';
-    }
     if (getState().player.isLoggedIn === true) {
       return dispatch(loginRequestSuccess(name))
     }
-    dispatch(loginRequest());
 
-    fetch('http://' + serverName + ':3000/login/?name=' + name)
+    dispatch(loginRequest());
+    fetch(config[getState().device.platform].apiUrl + '/login/?name=' + name)
       .then(response => response.json())
       .then(json => dispatch(loginRequestSuccess(name)))
       .catch(error => dispatch(loginRequestFailed(name, error)));

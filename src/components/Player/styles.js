@@ -1,13 +1,18 @@
 export default {
   player: {
-    color: '#000'
+
   },
 
+  you : {
+    backgroundColor: 'red',
+    alignItems: 'stretch',
+    alignSelf: 'auto'
+  },
   playerWrapper: {
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: 'blue',
+    backgroundColor: 'purple',
     alignItems: 'center',
     justifyContent: 'center'
   }

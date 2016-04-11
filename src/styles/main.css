@@ -46,7 +46,7 @@ html, body {
   justify-content: center;
   align-items: center;
   border: 1px solid blue;
-  font-size: 30px;
+  font-size: 14px;
 }
 
 .login {
@@ -57,19 +57,29 @@ html, body {
   margin: auto;
 }
 
+.login-button {
+  background: orchid;
+  width: 100px;
+  height: 28px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
 .footer-last-throw {
   text-align: center;
 }
 
 .player {
   display: flex;
-  background: red;
+  background: orange;
   width: 40px;
   height: 40px;
   border-radius: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 
 .you {

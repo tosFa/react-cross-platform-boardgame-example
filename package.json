@@ -7,6 +7,7 @@
     "start-ios": "react-native run-ios",
     "start-android": "react-native run-android",
     "start-web": "webpack-dev-server",
+    "start-packager": "./node_modules/react-native/packager/packager.sh",
     "build-web": "webpack",
     "build-ios": "react-native bundle --dev false --platform ios --entry-file ./index.ios.js --bundle-output ./ios/main.jsbundle",
     "build-android": "react-native bundle --dev false --platform android --entry-file ./index.android.js --bundle-output ./android/main.jsbundle"

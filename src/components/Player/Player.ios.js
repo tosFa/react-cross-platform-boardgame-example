@@ -16,7 +16,13 @@ class PlayerPresentation extends Base {
   render() {
     return (
       <View style={style.playerWrapper}>
-        <Text style={style.player}>{this.props.player}</Text>
+        <Text
+          style={
+            this.props.you === true ? style.you : style.player
+          }
+        >
+          {this.props.player}
+        </Text>
       </View>
     );
   }
