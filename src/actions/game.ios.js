@@ -1,6 +1,5 @@
-require('../helpers/userAgent');
-var io =require('socket.io-client/socket.io');
-var socket = io('http://localhost:8888', {transports: ['websocket']});
+import {WebSocket} from 'react-native';
+var socket = WebSocket('http://localhost:8888');
 
 export function throwDiceRequest(player) {
   socket.emit('THROW_DICE_REQUEST', {player: player});

@@ -1,12 +1,12 @@
 export default {
-  player: {
+  youWrapper : {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'orange',
+    alignItems: 'center',
+    justifyContent: 'center'
 
-  },
-
-  you : {
-    backgroundColor: 'red',
-    alignItems: 'stretch',
-    alignSelf: 'auto'
   },
   playerWrapper: {
     width: 40,

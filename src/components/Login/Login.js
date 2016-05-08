@@ -35,7 +35,7 @@ class LoginPresentation extends Base {
           className='login-button'
           onClick={ () => this.props.onClick(input.value) }
         >
-         Log in!!
+         Log in you fool !!!
         </button>
       </div>
 

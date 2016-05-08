@@ -57,13 +57,25 @@ html, body {
   margin: auto;
 }
 
+input {
+  /*background: red;*/
+  /*color: blue !important;*/
+  /*display: flex;*/
+  /*flex: 5;*/
+  /*border-radius: 5px;*/
+  /*height: 24px;*/
+
+}
+
 .login-button {
   background: orchid;
-  width: 100px;
   height: 28px;
   border: none;
   margin-left: 10px;
   border-radius: 5px;
+  display: flex;
+  flex: 2;
+  margin-left: 20px;
 }
 
 .footer-last-throw {

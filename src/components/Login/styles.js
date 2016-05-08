@@ -11,13 +11,13 @@ export default {
   },
   inputText: {
     flex: 5,
-    //backgroundColor: 'red',
+    backgroundColor: 'red',
     borderWidth: 2,
     borderColor: 'blue',
     height: 40,
-    //color: '#424242',
-    //fontSize: 15,
-    //borderRadius: 4
+    color: '#424242',
+    fontSize: 15,
+    borderRadius: 4
   },
   button: {
     flex: 1,
@@ -26,9 +26,9 @@ export default {
     justifyContent:'center',
     height: 40,
     marginLeft: 2,
-    //borderRadius: 12,
-    //borderColor: 'orange',
-    //borderWidth: 2
+    borderRadius: 12,
+    borderColor: 'orange',
+    borderWidth: 2
   }
 
 }

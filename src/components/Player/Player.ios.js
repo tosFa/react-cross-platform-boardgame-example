@@ -15,12 +15,12 @@ const style = StyleSheet.create(componentStyle);
 class PlayerPresentation extends Base {
   render() {
     return (
-      <View style={style.playerWrapper}>
-        <Text
-          style={
-            this.props.you === true ? style.you : style.player
-          }
-        >
+      <View
+        style={
+          this.props.you === true ? style.youWrapper : style.playerWrapper
+        }
+      >
+        <Text>
           {this.props.player}
         </Text>
       </View>
