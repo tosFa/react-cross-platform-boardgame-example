@@ -35,8 +35,8 @@ class AppPresentation extends Base {
     console.log('user is not logged in::ios');
     return (<Login />);
   }
-}
-;
+};
+
 const App = connect(mapStateToProps)(AppPresentation);
 
 export default App;

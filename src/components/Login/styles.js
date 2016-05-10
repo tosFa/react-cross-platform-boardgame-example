@@ -8,27 +8,37 @@ export default {
     justifyContent: 'center',
     flex: 1,
     flexDirection: 'row'
+    //flexDirection: 'column'
   },
   inputText: {
-    flex: 5,
-    backgroundColor: 'red',
+    //flex: 5,
+    flex: 8,
+    //backgroundColor: 'red',
     borderWidth: 2,
     borderColor: 'blue',
+    borderColor: 'grey',
     height: 40,
-    color: '#424242',
-    fontSize: 15,
+    //color: '#424242',
+    color: '#000',
+    //fontSize: 15,
+    fontSize: 25,
+    //borderRadius: 14
     borderRadius: 4
   },
   button: {
-    flex: 1,
-    backgroundColor: 'yellow',
-    alignItems:'center',
-    justifyContent:'center',
+    flex: 3,
+    //backgroundColor: 'yellow',
+    //backgroundColor: 'red',
+    //alignItems:'center',
+    alignItems:'stretch',
+    //alignItems:'center',
+    justifyContent:'flex-start',
     height: 40,
-    marginLeft: 2,
     borderRadius: 12,
-    borderColor: 'orange',
-    borderWidth: 2
+    borderColor: 'magenta',
+    //borderColor: 'orange',
+    borderWidth: 22,
+    //borderWidth: 2
   }
 
 }

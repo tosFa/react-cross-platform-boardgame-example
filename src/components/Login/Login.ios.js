@@ -21,7 +21,7 @@ class LoginPresentation extends Base {
         <View style={style.login}>
           <TextInput
             style={style.inputText}
-            placeholder={'Enter your name here'}
+            placeholder={'Enter your name here!!!!'}
             value={this.props.input}
             onChangeText={text => this.props.onChange(text)}
           />

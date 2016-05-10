@@ -15,7 +15,8 @@ import {mapStateToProps} from './connectToStore';
 const componentStyle = require('./styles').default;
 const style = StyleSheet.create(componentStyle);
 
-import {WebSocket} from 'react-native';
+require('../../helpers/userAgent');
+var io =require('socket.io-client/socket.io');
 
 class BoardPresentation extends Base {
   constructor(props) {
@@ -23,7 +24,7 @@ class BoardPresentation extends Base {
 
     const { dispatch } = this.props;
 
-    this.socket = WebSocket('http://localhost:8888');
+    this.socket = io('http://localhost:8888', {transports: ['websocket']});
     this.socket.emit('NEW_PLAYER', {player: this.props.player});
     this.socket.on('game', function(data) {
       dispatch({type: 'GAME_STATE', game: data.game});
