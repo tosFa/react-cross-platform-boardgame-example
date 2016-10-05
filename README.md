@@ -13,14 +13,22 @@ git clone https://github.com/tosFa/react-cross-platform-boardgame-example
 cd react-cross-platform-boardgame-example
 
 npm install
-
-
-npm run start -> starts the server
-
-npm run start-web -> starts the hot reloaded web client
-
-react-native run-ios -> starts the ios client
-
-react-native run-android -> starts the android client
-
 ```
+## Start the server
+```bash
+npm run start
+```
+## Start the hot reloaded web client
+```bash
+npm run start-web
+```
+
+## Start the ios client
+```bash
+react-native run-ios
+```
+## Start the android client
+```bash
+react-native run-android
+```
+
